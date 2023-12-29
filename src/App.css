@@ -38,6 +38,11 @@
 .mt_2 {
   margin-top: -2px;
 }
+.team_img_set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .app-icon {
   transition: all linear 500ms;
 }
@@ -47,6 +52,8 @@
 }
 .app-icon:hover {
   transform: translateY(-40%);
+
+  filter: drop-shadow(0 2px 8px rgba(253, 218, 96, 0.7));
 }
 .head-underline {
   position: relative;
@@ -225,9 +232,12 @@
 }
 
 /* timeline */
-
 .timeline:hover path {
-  fill: #fdda60;
+  fill: var(--light-yellow-2);
+}
+.timeline:hover .time-circle {
+  background: var(--light-yellow-2);
+  filter: drop-shadow(0px 4px 21px rgba(253, 218, 96, 0.7));
 }
 .utiliti-card:hover .fill_change path {
   fill: var(--black-0);
@@ -297,12 +307,6 @@
   width: 100%;
 }
 
-:hover.kong-shadow {
-  box-shadow: -2px 0px 18px 2px rgba(253, 218, 96, 0.5);
-  -webkit-box-shadow: -2px 0px 18px 2px rgba(253, 218, 96, 0.5);
-  -moz-box-shadow: -2px 0px 18px 2px rgba(253, 218, 96, 0.5);
-  transform: scale(1.1);
-}
 .mw_580 {
   max-width: 580px;
 }
@@ -321,14 +325,6 @@
 .time_svg {
   fill: var(--white-F);
 }
-.time-circle:hover {
-  background: var(--light-yellow-2);
-  filter: drop-shadow(0px 4px 21px rgba(253, 218, 96, 0.7));
-}
-.time-circle:hover .time_svg {
-  fill: var(--light-yellow-2) !important;
-}
-
 .phase_1 {
   left: -10%;
   top: -2%;
@@ -639,15 +635,7 @@
     --fs-lg: 36px;
     --fs-xxl: 54px;
   }
-  /* .mw_520 {
-    max-width: 520px;
-  }
-  .mw_470 {
-    max-width: 470px;
-  }
-  .mw_430 {
-    max-width: 430px;
-  } */
+
   .time_dot_1 {
     height: 20px;
     width: 20px;
@@ -733,6 +721,11 @@
     flex-shrink: 0;
     bottom: 5%;
     right: 38%;
+  }
+  .team_img_set {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
   }
   .bottle_size {
     width: 60%;

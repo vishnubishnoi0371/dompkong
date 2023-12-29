@@ -15,8 +15,11 @@ const Teammeet = () => {
   return (
     <div className="bg-clr mt_2 overflow-hidden">
       <Container className="my_container">
-        <p  data-aos="zoom-in"
-              data-aos-duration="2000" className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5">
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5"
+        >
           Meet The Team
         </p>
         <Row className=" line-top pt-4 pb-5">
@@ -26,13 +29,15 @@ const Teammeet = () => {
             data-aos="fade-down-right"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-bold ff-mon white-F mb-0 ">
+            <p className="fs-md fw-bold text-center text-md-start ff-mon white-F mb-0 ">
               Jaylon Schleifer
             </p>
-            <p className="fs-sm2 fw-normal ff-mon white-F mb-0 py-1 py-md-3 ">
+            <p className="fs-sm2 fw-normal text-center text-md-start ff-mon white-F mb-0 py-1 py-md-3 ">
               Carter Septimus
             </p>
-            <img className="team-img" src={teamone} alt="#" />
+            <div className="team_img_set">
+              <img className="team-img" src={teamone} alt="#" />
+            </div>
           </Col>
           <Col
             md={6}
@@ -40,23 +45,23 @@ const Teammeet = () => {
             data-aos="fade-down-left"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
+            <p className="fs-md text-center text-md-start fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Jaylon Schleifer
             </p>
-            <p className="fs-sm2 fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
+            <p className="fs-sm2 text-center text-md-start fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
               Nearly two decades in Business
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon pt-1 pt-md-4">
+            <p className="fs-sm text-center text-md-start fw-normal white-F mb-0 lh-160 ff-mon pt-1 pt-md-4">
               Faucibus risus id libero interdum in nisl nibh risus molestie.
               Gravida purus mauris nulla duis est eleifend. Suspendisse eu
               iaculis odio sit. Hac orci massa habitasse congue nulla tristique.{" "}
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
+            <p className="fs-sm text-center text-md-start fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
               Sem posuere amet, tristique pellentesque quis erat lectus mauris,
               ultricies. Adipiscing pharetra lectus mauris, mi pharetra magna in
               tempus nisi. Sed at in nisl feugiat non in amet eu facilisis.{" "}
             </p>
-            <div className="d-flex align-items-center gap-3">
+            <div className="d-flex team_img_set align-items-center gap-3">
               <a
                 href="https://www.instagram.com/"
                 target="blank"
@@ -107,13 +112,15 @@ const Teammeet = () => {
             data-aos="fade-down-right"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-bold ff-mon white-F mb-0 ">
+            <p className="fs-md text-center text-md-start fw-bold ff-mon white-F mb-0 ">
               Talan Passaquindici Arcand{" "}
             </p>
-            <p className="fs-sm2 fw-normal ff-mon white-F mb-0 py-1 py-md-3 ">
+            <p className="fs-sm2 text-center text-md-start fw-normal ff-mon white-F mb-0 py-1 py-md-3 ">
               Jakob Ekstrom Bothman{" "}
             </p>
-            <img className="team-img" src={teamtwo} alt="#" />
+            <div className="team_img_set">
+              <img className="team-img" src={teamtwo} alt="#" />
+            </div>
           </Col>
           <Col
             md={6}
@@ -121,23 +128,23 @@ const Teammeet = () => {
             data-aos="fade-down-left"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
+            <p className="fs-md text-center text-md-start fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Talan Passaquindici Arcand{" "}
             </p>
-            <p className="fs-sm2 fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
+            <p className="fs-sm2 text-center text-md-start fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
               Invester & International Top Model{" "}
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon pt-1 pt-md-4">
+            <p className="fs-sm text-center text-md-start fw-normal white-F mb-0 lh-160 ff-mon pt-1 pt-md-4">
               Neque hendrerit lectus neque molestie facilisis. Faucibus arcu
               eget facilisis nisl id ultricies. Aliquet eget scelerisque posuere
               habitant mauris quis ridiculus rutrum consectetur.{" "}
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
+            <p className="fs-sm text-center text-md-start fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
               Pretium vitae nunc proin nullam turpis eu blandit. Nibh ultricies
               gravida vestibulum nec ultricies. Eleifend egestas non nunc, nisl
               tristique adipiscing non diam fermentum.{" "}
             </p>
-            <div className="d-flex align-items-center gap-3">
+            <div className="d-flex align-items-center team_img_set gap-3">
               <a
                 href="https://www.instagram.com/"
                 target="blank"
@@ -188,13 +195,15 @@ const Teammeet = () => {
             data-aos="fade-down-right"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-bold ff-mon white-F mb-0 ">
+            <p className="fs-md fw-bold text-center text-md-start ff-mon white-F mb-0 ">
               Alfonso Franci{" "}
             </p>
-            <p className="fs-sm2 fw-normal ff-mon white-F mb-0 py-1 py-md-3 ">
+            <p className="fs-sm2 fw-normal text-center text-md-start ff-mon white-F mb-0 py-1 py-md-3 ">
               Alfonso Dokidis{" "}
             </p>
-            <img className="team-img" src={teamthree} alt="#" />
+            <div className="team_img_set">
+              <img className="team-img" src={teamthree} alt="#" />
+            </div>
           </Col>
           <Col
             md={6}
@@ -202,23 +211,23 @@ const Teammeet = () => {
             data-aos="fade-down-left"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
+            <p className="fs-md text-center text-md-start  fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Alfonso Franci{" "}
             </p>
-            <p className="fs-sm2 fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
+            <p className="fs-sm2 text-center text-md-start  fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
               Nearly two decades in Business{" "}
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon pt-2 pt-md-4">
+            <p className="fs-sm text-center text-md-start  fw-normal white-F mb-0 lh-160 ff-mon pt-2 pt-md-4">
               A ut sagittis, purus sit integer suspendisse lacus quam auctor.
               Interdum venenatis, sed ligula purus erat. A hac faucibus blandit
               euismod molestie amet nibh scelerisque.{" "}
             </p>
-            <p className="fs-sm fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
+            <p className="fs-sm  text-center text-md-start fw-normal white-F mb-0 lh-160 ff-mon py-2 py-md-3">
               Fermentum aliquam fames suscipit scelerisque integer mauris
               sollicitudin. Tellus mattis egestas molestie elementum, elementum.
               Urna, in molestie ac quam nisl orci mattis.{" "}
             </p>
-            <div className="d-flex align-items-center gap-3 pb-4 pb-md-0">
+            <div className="d-flex team_img_set align-items-center gap-3 pb-4 pb-md-0">
               <a
                 href="https://www.instagram.com/"
                 target="blank"
