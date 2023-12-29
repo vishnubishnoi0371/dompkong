@@ -9,7 +9,7 @@ const Road = () => {
   return (
     <div className="bg-clr mt_2 py-md-5 pt-4">
       <Container className="my_container">
-        <h2 className="white-F pb-5 fs-xxl m-0  fw-normal text-center ff-azo ">
+        <h2 className="white-F pb-2 pb-md-5 pt-4 fs-xxl m-0  fw-normal text-center ff-azo ">
           Roadmap
         </h2>
         <Row className="pt-md-4">

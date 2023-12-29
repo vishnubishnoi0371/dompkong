@@ -6,14 +6,14 @@ import ftrimg from "../Assets/Images/ftr-img.png";
 
 const Faqq = () => {
   return (
-    <div className="faq-bg mb_2 position-relative mt_2 pt-2 pt-md-5">
+    <div className="faq-bg mb_2 position-relative mt_2 z-1 pt-2 pt-md-5">
       <Container className="my_container">
         <p className="fs-xxl fw-normal white-F mb-0 lg-108 text-center ff-azo py-2 py-md-5">
           FAQS
         </p>
 
         <Accordion defaultActiveKey="0">
-          <Accordion.Item eventKey="0" className="mt-2">
+          <Accordion.Item eventKey="0" className="mt-2 z_1">
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Arcu faucibus diam feugiat magna etiam.
             </Accordion.Header>
@@ -203,8 +203,8 @@ const Faqq = () => {
         alt="#"
       />
 
-      <span className="position-absolute footer_sh_1"></span>
-      <span className="position-absolute footer-sh"></span>
+      <span className="position-absolute z_1 footer_sh_1"></span>
+      <span className="position-absolute z_1 footer-sh"></span>
     </div>
   );
 };

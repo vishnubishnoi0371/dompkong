@@ -49,7 +49,7 @@ const Kongs = () => {
       </p>
       <div className="d-flex justify-content-center position-relative align-items-center">
         <img className="large_kong z-1" src={kongone} alt="#" />
-        <span className="kong_bg_sh z- position-absolute"></span>
+        <span className="kong_bg_sh  position-absolute"></span>
       </div>
       <div className="d-none d-lg-block">
         <img

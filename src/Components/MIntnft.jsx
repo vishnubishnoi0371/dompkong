@@ -20,7 +20,13 @@ const MIntnft = () => {
       <Container className="my_container">
         <Row className="align-items-center pt-5 justify-content-center">
           <Col md={6} className="col-12 ">
-            <img className="bottle_size z_1" src={mintbottle} alt="#" />
+            <div className="ms-5 ps-3 ms-md-0">
+              <img
+                className="bottle_size z_1 ms-5 ms-md-0"
+                src={mintbottle}
+                alt="#"
+              />
+            </div>
           </Col>
           <Col md={6} className="col-12">
             <p className="fs-xxl fw-normal white-F ff-azo mb-0 lh-108 text-nowrap">
@@ -47,7 +53,7 @@ const MIntnft = () => {
                 <p className="fs-lg white-F mb-0 fw-900 ff-mon pt-1 pt-md-4">
                   Max 2{" "}
                 </p>
-                <p className="fs-sm white-F ff-mon fw-normal lh-160 mb-0  pt-1 pt-md-3">
+                <p className="fs-sm white-F ff-mon fw-normal text-nowrap lh-160 mb-0  pt-1 pt-md-3">
                   Transaction per wallet{" "}
                 </p>
               </Col>

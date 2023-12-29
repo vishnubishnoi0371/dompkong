@@ -10,7 +10,7 @@ const Teammeet = () => {
   return (
     <div className="bg-clr mt_2">
       <Container className="my_container">
-        <p className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-5">
+        <p className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5">
           Meet The Team
         </p>
         <Row className=" line-top pt-4 pb-5">
@@ -182,7 +182,7 @@ const Teammeet = () => {
               sollicitudin. Tellus mattis egestas molestie elementum, elementum.
               Urna, in molestie ac quam nisl orci mattis.{" "}
             </p>
-            <div className="d-flex align-items-center gap-3">
+            <div className="d-flex align-items-center gap-3 pb-4 pb-md-0">
               <a
                 href="https://www.instagram.com/"
                 target="blank"
