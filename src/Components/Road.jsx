@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,10 +8,14 @@ import timeline from "../Assets/Images/timeline-1.png";
 import timeline_mobile from "../Assets/Images/time_mobile_view.png";
 
 const Road = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <div className="bg-clr mt_2 py-md-5 pt-4">
+    <div className="bg-clr mt_2 py-md-5 pt-4 overflow-hidden">
       <Container className="my_container">
-        <h2 className="white-F pb-2 pb-md-5 pt-4 fs-xxl m-0  fw-normal text-center ff-azo ">
+        <h2  data-aos="zoom-in"
+              data-aos-duration="2000" className="white-F pb-2 pb-md-5 pt-4 fs-xxl m-0  fw-normal text-center ff-azo ">
           Roadmap
         </h2>
         <Row className="pt-md-4">
@@ -22,6 +28,8 @@ const Road = () => {
               className=" mobileview_img d-block d-xl-none"
               src={timeline_mobile}
               alt="#"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
             />
           </Col>
           <Col lg={8} className="mt-5 position-relative">
@@ -31,7 +39,11 @@ const Road = () => {
             <span className="time_dot_3  d-block d-xl-none position-absolute"></span>
             <span className="time_dot_4  d-block d-xl-none position-absolute"></span>
             <span className="time_dot_5 position-absolute  d-block d-xl-none"></span>
-            <div className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_1 timeline flex-sm-row">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_1 timeline flex-sm-row"
+            >
               <a className=" d-none d-xl-block" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +75,11 @@ const Road = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_2 timeline flex-sm-row ">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_2 timeline flex-sm-row "
+            >
               <a className=" d-none d-xl-block" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +110,11 @@ const Road = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_3 timeline flex-sm-row ">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              className="d-flex align-items-center mb-1 ms-4 ms-lg-0  pb-2 position-relative map_line_set_3 timeline flex-sm-row "
+            >
               <a className=" d-none d-xl-block" href="#">
                 <svg
                   width="129"
@@ -125,7 +145,11 @@ const Road = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-center mb-1 ms-4 ms-lg-0   position-relative map_line_set_4 timeline flex-sm-row ">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              className="d-flex align-items-center mb-1 ms-4 ms-lg-0   position-relative map_line_set_4 timeline flex-sm-row "
+            >
               <a className=" d-none d-xl-block" href="#">
                 <svg
                   width="129"
@@ -157,7 +181,11 @@ const Road = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-center mb-1 ms-4 ms-lg-0 mb-sm-4 pb-2 position-relative map_line_set_5 timeline flex-sm-row">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              className="d-flex align-items-center mb-1 ms-4 ms-lg-0 mb-sm-4 pb-2 position-relative map_line_set_5 timeline flex-sm-row"
+            >
               <a className=" d-none d-xl-block" href="#">
                 <svg
                   width="129"

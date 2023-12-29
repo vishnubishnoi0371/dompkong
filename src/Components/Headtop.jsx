@@ -1,25 +1,43 @@
 import headlogo from "../Assets/Images/head-logo.png";
 import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Headtop = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div>
       <div className="head-bg-img ">
         <Container className=" my_container position-relative">
           <div className="d-flex justify-content-center align-items-center">
-            <img className="pointer" src={headlogo} alt="#" />
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              className="pointer"
+              src={headlogo}
+              alt="#"
+            />
           </div>
           <button className="main-btn d-none d-sm-block fs-sm fw-normal black-0 ff-azo position-absolute top-btn-set ">
             cONNECT wALLET
           </button>
           <div className="d-flex d-block d-sm-none pt-3 justify-content-center align-items-center">
-            <button className="main-btn fs-sm fw-normal black-0 ff-azo ">
+            <button
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              className="main-btn fs-sm fw-normal black-0 ff-azo "
+            >
               cONNECT wALLET
             </button>
           </div>
-          <div className="d-flex align-items-center justify-content-center gap-3 pt-2 pt-md-4 ">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            className="d-flex align-items-center justify-content-center gap-3 pt-2 pt-md-4 "
+          >
             <a
               href="https://twitter.com/i/flow/login"
               target="_blank"
@@ -145,7 +163,11 @@ const Headtop = () => {
             </a>
           </div>
           <div className="d-flex justify-content-center align-items-center pt-1 pt-md-4 ">
-            <p className="fs-xxl text-center fw-normal white-F ff-azo lh-108 mw_30 pt-2 pt-md-4 mb-0 text-uppercase">
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              className="fs-xxl text-center fw-normal white-F ff-azo lh-108 mw_30 pt-2 pt-md-4 mb-0 text-uppercase"
+            >
               WELCOME{" "}
               <span className="d-block">
                 {" "}
@@ -155,19 +177,35 @@ const Headtop = () => {
             </p>
           </div>
           <div className="d-flex justify-content-center align-items-center ">
-            <p className="fs-sm fw-normal white-F ff-mon lh-160 mw_550 text-center mb-0 pt-1 pt-md-4">
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              className="fs-sm fw-normal white-F ff-mon lh-160 mw_550 text-center mb-0 pt-1 pt-md-4"
+            >
               Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra
               amet et. Erat nam molestie. Vita
             </p>
           </div>
           <div className="d-flex align-items-center flex-wrap justify-content-center gap-2 gap-md-4 pt-2 pt-md-4">
-            <button className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1">
+            <button
+              data-aos="flip-up"
+              data-aos-duration="2000"
+              className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1"
+            >
               Whitepaper
             </button>
-            <button className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1">
+            <button
+              data-aos="flip-up"
+              data-aos-duration="2000"
+              className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1"
+            >
               Mint
             </button>
-            <button className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1">
+            <button
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="fs-sm fw-normal ff-azo black-0 mb-0 main-btn lh-108 mt-1"
+            >
               Opensea
             </button>
           </div>

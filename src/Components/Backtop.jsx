@@ -19,7 +19,7 @@ const Backtop = () => {
       {backtotop ? (
         <button
           onClick={runTop}
-          className="position-fixed border-0 backtopbtn bottom-0 me-2 mb-2  pointer"
+          className="position-fixed  border-0 backtopbtn bottom-0 me-2 mb-2  pointer"
         >
           <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
             <path

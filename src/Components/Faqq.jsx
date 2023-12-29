@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import faqstroke from "../Assets/Images/faq_stroke.png";
 import Accordion from "react-bootstrap/Accordion";
 import Container from "react-bootstrap/Container";
 import ftrimg from "../Assets/Images/ftr-img.png";
 
 const Faqq = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <div className="faq-bg mb_2 position-relative mt_2 z-1 pt-2 pt-md-5">
+    <div className="faq-bg mb_2 position-relative mt_2 pt-2 pt-md-5 overflow-hidden">
       <Container className="my_container">
-        <p className="fs-xxl fw-normal white-F mb-0 lg-108 text-center ff-azo py-2 py-md-5">
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          className="fs-xxl fw-normal white-F mb-0 lg-108 text-center ff-azo py-2 py-md-5"
+        >
           FAQS
         </p>
 
         <Accordion defaultActiveKey="0">
-          <Accordion.Item eventKey="0" className="mt-2 z_1">
+          <Accordion.Item
+            eventKey="0"
+            className="mt-2 z_1"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Arcu faucibus diam feugiat magna etiam.
             </Accordion.Header>
@@ -23,7 +37,12 @@ const Faqq = () => {
               viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1" className="mt-2">
+          <Accordion.Item
+            eventKey="1"
+            className="mt-2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Fermentum tortor aenean.
             </Accordion.Header>
@@ -33,7 +52,12 @@ const Faqq = () => {
               viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2" className="mt-2">
+          <Accordion.Item
+            eventKey="2"
+            className="mt-2"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Dictum est amet sollicitudin.
             </Accordion.Header>
@@ -43,7 +67,12 @@ const Faqq = () => {
               viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3" className="mt-2">
+          <Accordion.Item
+            eventKey="3"
+            className="mt-2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Sed vulputate mi faucibus.
             </Accordion.Header>
@@ -53,7 +82,12 @@ const Faqq = () => {
               viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="4" className="mt-2">
+          <Accordion.Item
+            eventKey="4"
+            className="mt-2"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Nunc amet cursus morbi donec.
             </Accordion.Header>
@@ -63,7 +97,12 @@ const Faqq = () => {
               viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="5" className="mt-2">
+          <Accordion.Item
+            eventKey="5"
+            className="mt-2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <Accordion.Header className="acc-crd fs-sm3 fw-700 ff-mon text-white">
               Commodo placerat ultricies.
             </Accordion.Header>
@@ -75,7 +114,11 @@ const Faqq = () => {
           </Accordion.Item>
         </Accordion>
 
-        <div className="d-flex align-items-center justify-content-center">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="d-flex align-items-center justify-content-center"
+        >
           <img src={ftrimg} alt="#" />
         </div>
         <div className="d-flex align-items-center justify-content-center gap-3 py-4">
@@ -192,7 +235,7 @@ const Faqq = () => {
           </a>
         </div>
       </Container>
-      <div className="footer_line">
+      <div className="footer_line ">
         <p className="fs-sm text-center fw-normal white-F ff-mon mb-0 py-3">
           © DomPKong 2022
         </p>
@@ -203,8 +246,8 @@ const Faqq = () => {
         alt="#"
       />
 
-      <span className="position-absolute z_1 footer_sh_1"></span>
-      <span className="position-absolute z_1 footer-sh"></span>
+      <span className="position-absolute  footer_sh_1"></span>
+      <span className="position-absolute  footer-sh"></span>
     </div>
   );
 };

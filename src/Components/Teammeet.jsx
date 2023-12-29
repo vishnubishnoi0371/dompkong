@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import teamone from "../Assets/Images/team-1.png";
 import teamtwo from "../Assets/Images/team-2.png";
 import teamthree from "../Assets/Images/team-3.png";
@@ -7,14 +9,23 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Teammeet = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <div className="bg-clr mt_2">
+    <div className="bg-clr mt_2 overflow-hidden">
       <Container className="my_container">
-        <p className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5">
+        <p  data-aos="zoom-in"
+              data-aos-duration="2000" className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5">
           Meet The Team
         </p>
         <Row className=" line-top pt-4 pb-5">
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-bold ff-mon white-F mb-0 ">
               Jaylon Schleifer
             </p>
@@ -23,7 +34,12 @@ const Teammeet = () => {
             </p>
             <img className="team-img" src={teamone} alt="#" />
           </Col>
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-left"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Jaylon Schleifer
             </p>
@@ -85,7 +101,12 @@ const Teammeet = () => {
           </Col>
         </Row>
         <Row className=" line-top pt-4 pb-5">
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-bold ff-mon white-F mb-0 ">
               Talan Passaquindici Arcand{" "}
             </p>
@@ -94,7 +115,12 @@ const Teammeet = () => {
             </p>
             <img className="team-img" src={teamtwo} alt="#" />
           </Col>
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-left"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Talan Passaquindici Arcand{" "}
             </p>
@@ -156,7 +182,12 @@ const Teammeet = () => {
           </Col>
         </Row>
         <Row className=" line-top pt-4 pb-5">
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-bold ff-mon white-F mb-0 ">
               Alfonso Franci{" "}
             </p>
@@ -165,7 +196,12 @@ const Teammeet = () => {
             </p>
             <img className="team-img" src={teamthree} alt="#" />
           </Col>
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12"
+            data-aos="fade-down-left"
+            data-aos-duration="2000"
+          >
             <p className="fs-md fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Alfonso Franci{" "}
             </p>

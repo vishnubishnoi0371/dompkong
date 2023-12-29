@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import mintbottle from "../Assets/Images/mint-bottle.png";
 import mintstroke1 from "../Assets/Images/mint_stroke.png";
 import mintstroke2 from "../Assets/Images/mint_stroke-2.png";
@@ -7,6 +10,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const MIntnft = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   let [count, setCount] = useState(1);
 
   function incrementCount() {
@@ -16,10 +22,15 @@ const MIntnft = () => {
     setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
   }
   return (
-    <div className="mint-bg-img mt_2 position-relative">
+    <div className="mint-bg-img mt_2 position-relative overflow-hidden">
       <Container className="my_container">
         <Row className="align-items-center pt-5 justify-content-center">
-          <Col md={6} className="col-12 ">
+          <Col
+            md={6}
+            className="col-12  "
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className="ms-5 ps-3 ms-md-0">
               <img
                 className="bottle_size z_1 ms-5 ms-md-0"
@@ -28,7 +39,12 @@ const MIntnft = () => {
               />
             </div>
           </Col>
-          <Col md={6} className="col-12">
+          <Col
+            md={6}
+            className="col-12 "
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <p className="fs-xxl fw-normal white-F ff-azo mb-0 lh-108 text-nowrap">
               Mint NFT
             </p>

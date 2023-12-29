@@ -51,7 +51,8 @@ export const Partner = () => {
   return (
     <div className="bg-clr pt-4 mt_2 pb-md-5 pb-0">
       <Container className="pt-0 pt-sm-5 my_container pb-0 pb-md-4">
-        <p className="text-white fs-xxl m-0  fw-normal text-center ff-azo pt-4 pb-5">
+        <p  data-aos="zoom-in"
+              data-aos-duration="2000" className="text-white fs-xxl m-0  fw-normal text-center ff-azo pt-4 pb-5">
           PARTNERS
         </p>
         <Slider {...SliderFour}>

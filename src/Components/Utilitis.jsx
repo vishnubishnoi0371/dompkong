@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Utilitis = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div>
-      <div className="bg-clr mt_2 py-2 py-md-5">
+      <div className="bg-clr mt_2 py-2 py-md-5 overflow-hidden">
         <Container className=" py-2 py-md-5 my_container">
-          <p className="text-center fs-xxl white-F ff-azo fw-normal lh-108 mb-0 pb-1 pb-md-2">
+          <p  data-aos="zoom-in"
+              data-aos-duration="2000" className="text-center fs-xxl white-F ff-azo fw-normal lh-108 mb-0 pb-1 pb-md-2">
             Utilities
           </p>
           <Row className=" align-items-cemter justify-content-center py-1 py-md-5">
-            <Col lg={4} md={6} sm={6} className="col-12 ">
-              <div className="utiliti-card position-relative   p-4 mt-4 mt-lg-0">
+            <Col lg={4} md={6} sm={6} className="col-12">
+              <div
+                className="utiliti-card position-relative   p-4 mt-4 mt-lg-0 "
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
                 <div className="utiliti-logo d-flex align-items-cenetr justify-content-center">
                   <svg
                     width="56"
@@ -72,8 +82,12 @@ const Utilitis = () => {
                 <span className="card-sh-2 position-absolute"></span>
               </div>
             </Col>
-            <Col lg={4} md={6} sm={6} className="col-12  ">
-              <div className="utiliti-card position-relative p-4 mt-4 mt-lg-0">
+            <Col lg={4} md={6} sm={6} className="col-12 ">
+              <div
+                className="utiliti-card position-relative p-4 mt-4 mt-lg-0 "
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <div className="d-flex align-items-cenetr justify-content-center">
                   <svg
                     width="56"
@@ -111,10 +125,16 @@ const Utilitis = () => {
                 <span className="card-sh-2 position-absolute"></span>
               </div>
             </Col>
-            <Col lg={4} md={6} sm={6} className="col-12 ">
-              <div className="utiliti-card position-relative   p-4 mt-4 mt-lg-0">
+            <Col lg={4} md={6} sm={6} className="col-12">
+              <div
+                className="utiliti-card position-relative   p-4 mt-4 mt-lg-0 "
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                duration="2500"
+              >
                 <div className="d-flex align-items-cenetr justify-content-center">
-                  <svg className="fill_change"
+                  <svg
+                    className="fill_change"
                     xmlns="http://www.w3.org/2000/svg"
                     width="56"
                     height="56"
