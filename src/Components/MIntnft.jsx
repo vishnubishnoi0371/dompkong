@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import mintbottle from "../Assets/Images/mint-bottle.png";
@@ -13,14 +12,17 @@ const MIntnft = () => {
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
+
   let [count, setCount] = useState(1);
 
   function incrementCount() {
-    setCount((prevCount) => (prevCount < 9 ? prevCount + 1 : prevCount));
+    setCount((prevCount) => (prevCount < 40 ? prevCount + 1 : prevCount));
   }
   function decrementCount() {
     setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
   }
+  const formattedCount = count < 10 ? `0${count}` : count;
+
   return (
     <div className="mint-bg-img mt_2 position-relative overflow-hidden">
       <Container className="my_container">
@@ -45,7 +47,7 @@ const MIntnft = () => {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <p className="fs-xxl fw-normal white-F ff-azo mb-0 lh-108 text-nowrap">
+            <p className="fs-xxl fw-normal text-center text-md-start white-F ff-azo mb-0 lh-108 text-nowrap">
               Mint NFT
             </p>
             <Row className=" pt-2 pt-md-5">
@@ -74,20 +76,23 @@ const MIntnft = () => {
                 </p>
               </Col>
             </Row>
-            <div className=" d-flex gap-3 pt-3 pt-md-5">
+
+            <div
+              className=" d-flex align-items-center mt-4 gap-3"
+              data-aos="fade-up"
+            >
               <button
-                className="text-decoration-none pt-1 fs-lg black-0 fw-900 plus-btn lh-25 ff-mon border-0 "
+                className="fw-900 lh-108 fs-lg black-0 ff-mon bg-White1 plus-minus m-0"
                 onClick={decrementCount}
               >
                 -
               </button>
-              <div className="mb-0 count-btn fw-normal lh-25 ff-mon d-flex align-items-center justify-content-center">
-                <p className="mb-0 fs-lg ff-mon fw-900 text-center white-F">
-                  0{count}
-                </p>
+              <div className="s5-number d-flex align-items-center justify-content-center ff-mon fs-lg white-F fw-900 lh-108">
+                {" "}
+                {formattedCount}
               </div>
               <button
-                className="text-decoration-none pt-1 black-0 fs-lg fw-900 plus-btn lh-25 ff-mon border-0 "
+                className="fw-900 lh-108 fs-lg black-0 ff-mon bg-White1 plus-minus m-0"
                 onClick={incrementCount}
               >
                 +
@@ -110,7 +115,7 @@ const MIntnft = () => {
         alt="#"
       />
 
-      <span className="mint-sh-1 z-1"></span>
+      <span className="mint-sh-1 z_1 d-none d-md-block"></span>
       <span className="mint-sh-2 z-1"></span>
     </div>
   );

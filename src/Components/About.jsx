@@ -18,10 +18,12 @@ const About = () => {
             md={6}
             className="col-12 pt-1 pt-md-5"
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="2500"
           >
-            <p className="fs-xxl fw-normal ff-azo mb-0  white-F">About </p>
-            <p className="fs-sm fw-normal white-F lh-160 mb-0 mw_450">
+            <p className="fs-xxl fw-normal ff-azo mb-0 text-center text-md-start  white-F">
+              About{" "}
+            </p>
+            <p className="fs-sm fw-normal text-center text-md-start white-F lh-160 mb-0 mw_450">
               Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra
               amet et. Erat nam molestie. Vitae mollis lacus senectus mattis
               nisl. Porta , adipiscing sed mus diam amet, ac sed tellus.{" "}
@@ -31,7 +33,7 @@ const About = () => {
             md={6}
             className="col-12 z-1 position-relative"
             data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos-duration="2500"
           >
             <img className=" w-100" src={aboutimg} alt="#" />
 

@@ -14,8 +14,11 @@ const Road = () => {
   return (
     <div className="bg-clr mt_2 py-md-5 pt-4 overflow-hidden">
       <Container className="my_container">
-        <h2  data-aos="zoom-in"
-              data-aos-duration="2000" className="white-F pb-2 pb-md-5 pt-4 fs-xxl m-0  fw-normal text-center ff-azo ">
+        <h2
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          className="white-F pb-2 pb-md-5 pt-4 fs-xxl m-0  fw-normal text-center ff-azo "
+        >
           Roadmap
         </h2>
         <Row className="pt-md-4">
@@ -25,7 +28,7 @@ const Road = () => {
           >
             <img className=" w-100 d-none d-xl-block" src={timeline} alt="#" />
             <img
-              className=" mobileview_img d-block d-xl-none"
+              className=" mobileview_img object-fit-contain d-block d-xl-none"
               src={timeline_mobile}
               alt="#"
               data-aos="zoom-in"

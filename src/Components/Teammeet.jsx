@@ -17,19 +17,20 @@ const Teammeet = () => {
       <Container className="my_container">
         <p
           data-aos="zoom-in"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           className="fs-xxl fw-normal white-F text-center ff-azo mb-0 py-4 py-md-5"
         >
           Meet The Team
         </p>
-        <Row className=" line-top pt-4 pb-5">
+        <Row className="  pt-md-4 pb-md-5">
+          <hr className="line-top" />
           <Col
             md={6}
             className="col-12"
             data-aos="fade-down-right"
             data-aos-duration="2000"
           >
-            <p className="fs-md fw-bold text-center text-md-start ff-mon white-F mb-0 ">
+            <p className="fs-md fw-bold text-center text-md-start lh-108 ff-mon white-F mb-0 ">
               Jaylon Schleifer
             </p>
             <p className="fs-sm2 fw-normal text-center text-md-start ff-mon white-F mb-0 py-1 py-md-3 ">
@@ -45,7 +46,7 @@ const Teammeet = () => {
             data-aos="fade-down-left"
             data-aos-duration="2000"
           >
-            <p className="fs-md text-center text-md-start fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
+            <p className="fs-md  text-center text-md-start fw-semibold white-F lh-108 mb-0 ff-mon pt-2 pt-md-0">
               @Jaylon Schleifer
             </p>
             <p className="fs-sm2 text-center text-md-start fw-normal white-F lh-108 mb-0 ff-mon py-2 py-md-3">
@@ -105,14 +106,15 @@ const Teammeet = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" line-top pt-4 pb-5">
+        <Row className="  pt-4 pb-md-5">
+          <hr className="line-top" />
           <Col
             md={6}
             className="col-12"
             data-aos="fade-down-right"
             data-aos-duration="2000"
           >
-            <p className="fs-md text-center text-md-start fw-bold ff-mon white-F mb-0 ">
+            <p className="fs-md text-center lh-108 text-md-start fw-bold ff-mon white-F mb-0 ">
               Talan Passaquindici Arcand{" "}
             </p>
             <p className="fs-sm2 text-center text-md-start fw-normal ff-mon white-F mb-0 py-1 py-md-3 ">
@@ -188,7 +190,8 @@ const Teammeet = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" line-top pt-4 pb-5">
+        <Row className="  pt-4 pb-md-5">
+          <hr className="line-top" />
           <Col
             md={6}
             className="col-12"

@@ -10,10 +10,12 @@ import Faqq from "./Components/Faqq";
 import Kongs from "./Components/Kongs";
 import Road from "./Components/Road";
 import Backtop from "./Components/Backtop";
+import PreLoad from "./Components/Preload";
 
 function App() {
   return (
     <div className="App">
+      <PreLoad />
       <Headtop />
       <About />
       <Backtop />

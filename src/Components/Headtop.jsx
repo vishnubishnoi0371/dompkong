@@ -1,4 +1,7 @@
 import headlogo from "../Assets/Images/head-logo.png";
+import headone from "../Assets/Images/head_1.png";
+import headtwo from "../Assets/Images/head_2.png";
+import headthree from "../Assets/Images/head_3.png";
 import Container from "react-bootstrap/Container";
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -10,21 +13,43 @@ const Headtop = () => {
   }, []);
   return (
     <div>
-      <div className="head-bg-img ">
+      <div className="head-bg-img mt_2  position-relative overflow-hidden">
+      
+        <img
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="pointer position-absolute head_one d-none d-xl-block"
+          src={headone}
+          alt="#"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          className="pointer position-absolute head_two d-none d-xl-block"
+          src={headtwo}
+          alt="#"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          className="pointer position-absolute head_three d-none d-xl-block"
+          src={headthree}
+          alt="#"
+        />
         <Container className=" my_container position-relative">
           <div className="d-flex justify-content-center align-items-center">
             <img
               data-aos="zoom-in"
               data-aos-duration="2000"
-              className="pointer"
+              className="pointer "
               src={headlogo}
               alt="#"
             />
           </div>
-          <button className="main-btn d-none d-sm-block fs-sm fw-normal black-0 ff-azo position-absolute top-btn-set ">
+          <button className="main-btn  d-none d-sm-block fs-sm fw-normal black-0 ff-azo position-absolute top-btn-set ">
             cONNECT wALLET
           </button>
-          <div className="d-flex d-block d-sm-none pt-3 justify-content-center align-items-center">
+          <div className="d-flex  d-block d-sm-none pt-3 justify-content-center align-items-center">
             <button
               data-aos="zoom-in"
               data-aos-duration="2000"
@@ -36,7 +61,7 @@ const Headtop = () => {
           <div
             data-aos="zoom-in"
             data-aos-duration="2000"
-            className="d-flex align-items-center justify-content-center gap-3 pt-2 pt-md-4 "
+            className="d-flex align-items-center  justify-content-center gap-3 pt-2 pt-md-4 "
           >
             <a
               href="https://twitter.com/i/flow/login"

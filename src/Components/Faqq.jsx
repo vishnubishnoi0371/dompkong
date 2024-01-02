@@ -122,7 +122,11 @@ const Faqq = () => {
           <img src={ftrimg} alt="#" />
         </div>
         <div className="d-flex align-items-center justify-content-center gap-3 py-4">
-          <a href="" target="blank" className="app-icon">
+          <a
+            href="https://twitter.com/i/flow/login"
+            target="blank"
+            className="app-icon"
+          >
             <svg
               width="24"
               height="24"
@@ -136,7 +140,7 @@ const Faqq = () => {
               />
             </svg>
           </a>
-          <a href="" target="blank" className="app-icon">
+          <a href="#" className="app-icon">
             <svg
               width="24"
               height="24"
@@ -159,7 +163,7 @@ const Faqq = () => {
               </defs>
             </svg>
           </a>
-          <a href="" target="blank" className="app-icon">
+          <a href="#" className="app-icon">
             <svg
               width="24"
               height="24"
@@ -182,7 +186,11 @@ const Faqq = () => {
               </defs>
             </svg>
           </a>
-          <a href="" target="blank" className="app-icon">
+          <a
+            href="https://support.discord.com/hc/en-us/community/posts/360056220432-Login"
+            target="blank"
+            className="app-icon"
+          >
             <svg
               width="24"
               height="24"
@@ -198,7 +206,7 @@ const Faqq = () => {
               />
             </svg>
           </a>
-          <a href="" target="blank" className="app-icon">
+          <a href="#" className="app-icon">
             <svg
               width="24"
               height="24"
@@ -212,7 +220,7 @@ const Faqq = () => {
               />
             </svg>
           </a>
-          <a href="" target="blank" className="app-icon">
+          <a href="https://telegram.org/" target="blank" className="app-icon">
             <svg
               width="24"
               height="24"
@@ -246,7 +254,7 @@ const Faqq = () => {
         alt="#"
       />
 
-      <span className="position-absolute  footer_sh_1"></span>
+      <span className="position-absolute d-md-block d-none footer_sh_1"></span>
       <span className="position-absolute  footer-sh"></span>
     </div>
   );
